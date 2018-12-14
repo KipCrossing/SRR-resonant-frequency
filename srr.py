@@ -3,8 +3,12 @@
 import math
 
 class SplitRing(object):
-    _permittivity = 8.854187817*(10**-12)   #E0
-    _permeability = math.pi*4*(10**-6)      #u0
+    @property
+    def _permittivity(self):
+        return 8.854187817*(10**-12)   #E0
+    @property
+    def _permeability(self):
+        return math.pi*4*(10**-6)      #u0
 
     def __init__(self,gap,height,width,radius):
         self.gap = gap
@@ -33,6 +37,6 @@ class SplitRing(object):
         f = 1/(2*math.pi*math.sqrt(self.Inductance()*self.Capacitance()))
         return f
 
-SR = SplitRing(5,1,1,20)
-
+SR = SplitRing(5,0.5,0.5,10)
+print(SR._permeability)
 print(SR.ResonantFrequency())
