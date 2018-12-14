@@ -1,9 +1,10 @@
 from srr import SplitRing
 
-SR = SplitRing(0.003,0.0008,0.0008,0.001) # Units in m
+SR = SplitRing(0.004,0.001,0.001,0.015) # Units in m
 
 RF = SR.ResonantFrequency()
-print(RF)
+
+print('Resonant Frequency: %f GHz' % (RF/10**9))
 
 # Other useful properties include:
 SR.permittivity     # permittivity of free space

@@ -26,7 +26,7 @@ SplitRing takes 4 arguments
 for example:
 
 ```python
-SR = SplitRing(0.003,0.0008,0.0008,0.001)   # SplitRing(gap,height,width,radius)
+SR = SplitRing(0.004,0.001,0.001,0.015)   # SplitRing(gap,height,width,radius)
 ```
 
 To get the resonant frequency:

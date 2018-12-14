@@ -3,7 +3,7 @@
 import math
 
 class SplitRing(object):
-    """Described a split ring and its assosiated properties for split ring resinator (SRR) applications. inspired by the paper 'Analytical formulation for the resonant frequency of split rings' """
+    """Described a split ring and its assosiated properties for split ring resinator (SRR) applications."""
 
     def __init__(self,gap,height,width,radius):
         """Short summary.
