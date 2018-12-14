@@ -5,7 +5,6 @@ import math
 class SplitRing(object):
     """Described a split ring and its assosiated properties for split ring resinator (SRR) applications. inspired by the paper 'Analytical formulation for the resonant frequency of split rings' """
 
-
     def __init__(self,gap,height,width,radius):
         """Short summary.
 
@@ -21,7 +20,6 @@ class SplitRing(object):
             the radius of the ring. From center to inner side of the ring.
         """
         self.gap = gap
-
         self.height = height
         self.width = width
         self.radius = radius
@@ -30,10 +28,11 @@ class SplitRing(object):
     def permittivity(self):
         """str: permittivity of free space"""
         return 8.854187817*(10**-12)   #E0
+
     @property
     def permeability(self):
         """str: permeability of free space"""
-        return math.pi*4*(10**-6)      #u0
+        return math.pi*4*(10**-7)      #u0
 
     def Inductance(self):
         """Returns:
@@ -65,5 +64,3 @@ class SplitRing(object):
             float: the resonant frequency of the SRR"""
         f = 1/(2*math.pi*math.sqrt(self.Inductance()*self.Capacitance()))
         return f
-
-help(SplitRing)
