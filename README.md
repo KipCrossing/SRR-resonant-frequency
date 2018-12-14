@@ -1,7 +1,6 @@
 # SSR  Resonant Frequency
 
-Functions to help calculate the resonant frequencies of split ring resonators (SSR). Inspired by the paper "Analytical formulation for the resonant frequency of split rings" (Sydoruk et al.)
-
+Functions to help calculate the resonant frequencies of split ring resonators (SSR).
 ## Getting Started
 
 ```
@@ -10,7 +9,7 @@ git clone https://github.com/KipCrossing/SRR-resonant-frequency
 
 ### Usage
 
-See [example.py](https://github.com/KipCrossing/SRR-resonant-frequency/blob/master/srr.py) to get started or copy srr.py into your working directory.
+See [example.py](https://github.com/KipCrossing/SRR-resonant-frequency/blob/master/example.py) to get started or copy srr.py into your working directory.
 
 Import SplitRing
 
@@ -46,3 +45,7 @@ SR.C_gap()          # gap capacitance of the SRR
 SR.C_surf()         # surface capacitance of the SRR
 SR.Capacitance()    # total capacitance of the SRR
 ```
+
+## Acknowledgements
+Written By Kipling Crossing
+Inspired by the paper "Analytical formulation for the resonant frequency of split rings" (Sydoruk et al.)
