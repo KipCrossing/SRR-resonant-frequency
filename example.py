@@ -1,6 +1,6 @@
 from srr import SplitRing
 
-SR = SplitRing(200,50,50,800)
+SR = SplitRing(0.003,0.0008,0.0008,0.001) # Units in m
 
 RF = SR.ResonantFrequency()
 print(RF)

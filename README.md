@@ -26,7 +26,7 @@ SplitRing takes 4 arguments
 for example:
 
 ```python
-SR = SplitRing(200,50,50,800)   # SplitRing(gap,height,width,radius)
+SR = SplitRing(0.003,0.0008,0.0008,0.001)   # SplitRing(gap,height,width,radius)
 ```
 
 To get the resonant frequency:
@@ -48,4 +48,5 @@ SR.Capacitance()    # total capacitance of the SRR
 
 ## Acknowledgements
 Written By Kipling Crossing
+
 Inspired by the paper "Analytical formulation for the resonant frequency of split rings" (Sydoruk et al.)
