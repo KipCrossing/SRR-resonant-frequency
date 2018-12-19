@@ -1,11 +1,17 @@
 from srr import SplitRing
 
-SR = SplitRing(0.004,0.001,0.001,0.015) # Units in m
+gap    = 0.0015
+height = 0.0005
+width  = 0.0005
+radius = 0.01
+
+
+SR = SplitRing(gap,height,width,radius) # Units in m
 
 RF = SR.ResonantFrequency()
 
 print('Resonant Frequency: %f GHz' % (RF/10**9))
-# Resonant Frequency: 2.043394 GHz
+# Resonant Frequency: 3.457072 GHz
 
 # Other useful properties include:
 SR.permittivity     # permittivity of free space
